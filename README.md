@@ -5,7 +5,8 @@
   - collect summary statistics on the pounds per square inch (PSI) of suspension coils from the manufacturing lots
   - run t-tests to determine if the manufacturing lots are different from the mean population
   - Design a statistical study to compare vehicle performance of the MechaCar to other manufacturer's vehicles. 
-- Resources:
+  
+Resources:
   - MechaCar_mpg.csv
   - Suspension_Coil.csv
   - RStudio
