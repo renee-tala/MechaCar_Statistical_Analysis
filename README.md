@@ -1,12 +1,14 @@
 # MechaCar Statistical Analysis
  The data analytics team at AutosRUs are conducting a special project on the production of the MechaCar, AutosRUs' newest prototype. 
  The team will:
-   - perform a multiple linear regression analysis 
-   - collect summary statistics on the pounds per square inch (PSI) of suspension coils from the manufacturing lots
-   - run t-tests to determine if the manufacturing lots are different from the mean population
-   - Design a statistical study to compare vehicle performance of the MechaCar to other manufacturer's vehicles. 
-
-
+  - perform a multiple linear regression analysis 
+  - collect summary statistics on the pounds per square inch (PSI) of suspension coils from the manufacturing lots
+  - run t-tests to determine if the manufacturing lots are different from the mean population
+  - Design a statistical study to compare vehicle performance of the MechaCar to other manufacturer's vehicles. 
+- Resources:
+  - MechaCar_mpg.csv
+  - Suspension_Coil.csv
+  - RStudio
  
 ## Linear Regression to Predict MPG
 and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
