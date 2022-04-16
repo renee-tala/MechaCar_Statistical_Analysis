@@ -14,11 +14,12 @@ Resources:
 ## Linear Regression to Predict MPG
 and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
 
-![linreg](img/LinearReg.PNG)
+![linreg](img/LinearRegpng.png)
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+ - Vehicle length and ground clearance provide non-random variance; vehicle length has a p-value of 2.60e-12 and ground clearance has a p-value of 5.21e08. 
+ - Vehicle weight, spoiler angle, and AWD has p-values that show random variance. 
+ - The slope of the model cannot be considered zero. This is because the p-value is 6.712e-11, it is less than zero and therefore the slope cannot be zero.
+ - The R-squared value is 71.19%. The model predicts prototypes effectively 71% of the time. 
 
 ## Summary Statistics on Suspension Coils
 
@@ -29,19 +30,19 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 - In total, the data meets this criteria at 62.29 PSI according to the variance.  
 - Looking at the lot summary, Lot 3 surpases the rate at 170.28 PSI. 
 
-
 ## T-Tests on Suspension Coils 
-then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 ### One Sample t-test 
 ![t-test](img/t-testpng.png)
-- 
+- The inital t-test shows the sample mean is not statistically different from the population mean. With a p-value of 0.06.
 
 ![t-test-subset](img/t-test-subset.png)
+-Further analysis into the Manufacturing Lots shows that Lot 1 and 2 are not statistically different from the population mean. Lot 3 is statistically different with a p-value of 0.04, whereas the population mean has a p-value of 0.06. Lot 3's mean of x is also different from Lots 1 and 2; the mean of x is 1496.14 and Lot 1 and 2 have mean of x's at 1500.
 
 ## Study Design: MechaCar v Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+To provide our consumers with a robust analysis of MechaCar's performance against the competition, another study must be conducted. We must consider cost, city and highway fuel efficiency, maintenance cost, and safety rating. 
+
+The null hypothesis is that MechaCar's metrics are not significantly different from the competitions. The alternate hypothesis is that MechaCar's metrics are significantly different from the competitions.
+
+To test this hypothesis we will use a one-tailed t-test. We want to see if MechaCar is higher or lower in values versus the competition. Consumers look for lower cost and maintenance cost, as well as higher city and highway fuel efficiency and safety rating. 
+
+Running these tests requires data on MechaCar's cost, fuel efficiency, maintenance cost, and safety rating. The same data is required from MechaCar's competition.
